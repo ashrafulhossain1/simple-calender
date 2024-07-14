@@ -1,19 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>form align center</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-between;
+            
+        }
+
+        nav a {
+            text-decoration: none; 
+            color: black;
+        }
+
+        /* ***extra matburi**** */
+        .nav-left-side{
+            display: flex;
+            gap: 30px;
+        }
+        
+         /* ***extra matburi**** */
+         
+        .login-form-container{
+            display: flex;
+            justify-content: center;
+            /* border: 2px solid salmon; */
+            /* if align item center kora hoy [.login-form-container] ke, height na dile kaj hbe na  */
+            align-items: center;
+            height: 90vh;
+            
+        }
+        .login-form{
+            display: flex;
+            flex-direction: column;
+            width: 40%;
+            /* border: 2px solid blueviolet; */
+            justify-content: center;
+        }
+        .login-form  input{
+            margin-top: 20px;
+        }
+
+
+
+    </style>
 
 </head>
+
 <body>
     <nav>
-        <a href="">home</a>
-        <a href="">profile</a>
-        <a href="">about</a>
-        <a href="">support</a>
-        <a href="login"></a>
+        <div class="nav-left-side">
+
+            <a href="">home</a>
+            <a href="">profile</a>
+            <a href="">about</a>
+            <a href="">blog</a>
+            <a href="">support</a>
+        </div>
+        <a href="">Login</a>
     </nav>
-    
+    <section class="login-form-container">
+        <form class="login-form">
+            <h3>Please login</h3>
+            <input type="email" name="" id="" placeholder="Your Name" required>
+            <input type="password" name="" id="" placeholder="your password" required>
+            <input type="submit" value="login">
+        </form>
+    </section>
 </body>
+
 </html>
